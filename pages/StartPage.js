@@ -8,12 +8,12 @@ export const StartPage = () => {
             <h1 className="title">
                 StartPage
             </h1>
-            <p className="subtitle has-text-info">
+            <p className="subtitle has-text-info" data-testid="welcomeMessage">
                 My first website with <strong>Frontend-starter</strong>!
             </p>
 
             <figure>
-                <img src={logo} />
+                <img src={logo}  alt={''}/>
                 <figcaption>Using js</figcaption>
             </figure>
         </div>
