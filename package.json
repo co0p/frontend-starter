@@ -1,5 +1,8 @@
 {
   "name": "frontend-starter",
+  "engines": {
+    "node": "14.15.4"
+  },
   "scripts": {
     "start": "parcel index.html",
     "test": "jest",

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from 'url:./../assets/logo.png';
+import logo from 'url:/assets/logo.png';
 
 export const Hero = () => {
 

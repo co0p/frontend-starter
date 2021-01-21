@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import { useHistory } from "react-router-dom";
 
-import jsImage from 'url:../assets/js_logo.png';
-import reactImage from 'url:../assets/reactjs.jpg';
-import jestImage from 'url:../assets/jest.png';
-import bulmaImage from 'url:../assets/bulma.png';
-import parcelImage from 'url:../assets/parcel.png';
-import scssImage from 'url:../assets/scss.png';
-import testingImage from 'url:../assets/testinglib.png';
+import jsImage from 'url:/assets/js_logo.png';
+import reactImage from 'url:/assets/reactjs.jpg';
+import jestImage from 'url:/assets/jest.png';
+import bulmaImage from 'url:/assets/bulma.png';
+import parcelImage from 'url:/assets/parcel.png';
+import scssImage from 'url:/assets/scss.png';
+import testingImage from 'url:/assets/testinglib.png';
 
 const techChoices = [
     {
