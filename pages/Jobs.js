@@ -21,7 +21,7 @@ export const Jobs = () => {
 
     const rows = state.jobs.map((job, id) => (
 
-        <a className="box" key={id} target="_blank" href={job.url}>
+        <a className="box" key={id} target="_blank" href={job.url} data-testid="jobEntry">
             <div className="columns">
                 <div className="column is-2">
                     <figure className="image is-128x128">

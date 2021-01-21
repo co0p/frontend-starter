@@ -54,11 +54,11 @@ export const Home = () => {
         history.push(`/jobs/${label}`);
     }
 
-    const techBoxes = techChoices.map(choice => {
+    const techBoxes = techChoices.map((choice, idx) => {
 
         const selectedClass = selectedTech.id === choice.id ? " is-active" : "";
         return (
-            <div className="column is-3" key={choice.id} onClick={() => selectTech(choice)}>
+            <div className="column is-3" key={choice.id} onClick={() => selectTech(choice)} data-testid={"tech_"+idx}>
 
                 <a className={"box " + selectedClass}>
                     <div className="content">
@@ -81,7 +81,10 @@ export const Home = () => {
                     </div>
                     <div className="column is-5">
                         {selectedTech.id &&
-                        <button onClick={() => handleSearchJob()} className="button is-large is-centered is-fullwidth">Get me a job for: <span className="has-text-weight-bold">{selectedTech.label}</span>!</button>
+                        <button onClick={() => handleSearchJob()} data-testid="searchButton"
+                                className="button is-large is-centered is-fullwidth">Get me a job for:
+                            <span className="has-text-weight-bold">{selectedTech.label}</span>!
+                        </button>
                         }
                         {!selectedTech.id &&
                         <button className="button is-large is-centered is-fullwidth" disabled={true}>Find me a job</button>
