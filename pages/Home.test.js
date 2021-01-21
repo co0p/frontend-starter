@@ -2,12 +2,12 @@ import React from 'react';
 
 import { render, screen } from '@testing-library/react'
 
-import {StartPage} from './StartPage';
+import {Home} from './Home';
 
 describe('StartPage', () => {
     it('should render the name of the project', () => {
 
-        render(<StartPage/>)
+        render(<Home/>)
         let welcomeMessage = screen.getByTestId("welcomeMessage")
         expect(welcomeMessage.textContent).toContain('Frontend-starter')
     })
